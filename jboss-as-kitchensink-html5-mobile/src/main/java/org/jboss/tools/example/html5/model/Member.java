@@ -59,6 +59,9 @@ public class Member implements Serializable {
     @Digits(fraction = 0, integer = 12, message = "Not valid")
     @Column(name = "phone_number")
     private String phoneNumber;
+    
+    @NotNull
+    private String test;
 
     public Long getId() {
         return id;
@@ -91,4 +94,13 @@ public class Member implements Serializable {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    
+    public String getTest() {
+		return test;
+	}
+    
+    public void setTest(String test) {
+		this.test = test;
+	}
+    
 }
