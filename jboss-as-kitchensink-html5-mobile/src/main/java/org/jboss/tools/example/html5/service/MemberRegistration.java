@@ -38,8 +38,8 @@ public class MemberRegistration {
     private Event<Member> memberEventSrc;
 
     public void register(Member member) throws Exception {
-        log.info("Registering " + member.getName());
-        log.info("I'm logging this thing up!");
+        log.info("Registering " + member.getName() + "log");
+        log.info("I'm logging this thing up!!!");
         em.persist(member);
         memberEventSrc.fire(member);
     }
