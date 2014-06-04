@@ -40,7 +40,7 @@ public class MemberRegistration {
     public void register(Member member) throws Exception {
         log.info("Registering " + member.getName());
         log.info("I'm debugging this thing up!");
-        System.out.println("Syout je nejlepsi");
+        log.info("logger je nejlepsi");
         em.persist(member);
         memberEventSrc.fire(member);
     }
