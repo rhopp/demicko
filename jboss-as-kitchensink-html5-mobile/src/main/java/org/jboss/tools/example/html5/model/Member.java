@@ -60,6 +60,17 @@ public class Member implements Serializable {
     @Column(name = "phone_number")
     private String phoneNumber;
     
+    private boolean macho;
+    
+    public void setMacho(boolean macho) {
+		this.macho = macho;
+	}
+    
+    public boolean isMacho() {
+		return macho;
+	}
+    
+    
     @NotNull
     private String test;
 
