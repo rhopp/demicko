@@ -74,6 +74,18 @@ public class Member implements Serializable {
     @NotNull
     private String test;
 
+    
+    private String testitk;
+    
+    public String getTest() {
+		return testitk;
+	}
+    
+    public void setTest(String test) {
+		this.testitk = test;
+	}
+    
+    
     public Long getId() {
         return id;
     }
@@ -102,7 +114,7 @@ public class Member implements Serializable {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhonember(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
     
